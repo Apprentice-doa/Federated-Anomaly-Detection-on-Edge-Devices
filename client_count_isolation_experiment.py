@@ -28,13 +28,12 @@ import glob
 import json
 import os
 import warnings
-warnings.filterwarnings('ignore')
-
+import matplotlib
 import numpy as np
 import pandas as pd
-import matplotlib
 matplotlib.use('Agg')
 import matplotlib.pyplot as plt
+warnings.filterwarnings('ignore')
 from sklearn.model_selection import train_test_split
 from sklearn.neural_network import MLPClassifier
 from sklearn.preprocessing import StandardScaler
@@ -47,7 +46,6 @@ FEATURES = [
     "net_sent_kbs", "net_recv_kbs",
 ]
 LABEL = "is_anomaly"
-
 
 def load_device(data_dir, device_id):
     pattern = os.path.join(data_dir, f"telemetry_{device_id}_*.csv")
