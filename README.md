@@ -4,6 +4,8 @@
 
 > *Deep Learning Indaba 2026 — RIAD Poster Session · Poster GP-80*
 > Daniel Akhabue · David Akhabue
+>
+> 🏆 **Best Poster Award — Deep Learning Indaba 2026**
 
 ---
 
