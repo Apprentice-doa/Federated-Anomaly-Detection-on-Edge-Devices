@@ -79,6 +79,8 @@ Federation is **worst in every seed** — 0.10–0.14 F1 points below centralize
 
 Communication cost: 290 KB total, 14.5 KB/round — viable on 2G, but bandwidth savings do not offset the accuracy cost.
 
+![Convergence Plot](results/convergence_plot.png)
+
 ### Client-Count Isolation Study
 
 To separate heterogeneity from client count, we split each real device's data into `k` sub-clients (k = 1–4), keeping Pi-derived and gateway-derived data strictly separated. Real ARM64-vs-x86_64 heterogeneity is held **constant**; only total client count changes.
@@ -92,9 +94,13 @@ To separate heterogeneity from client count, we split each real device's data in
 
 Federated accuracy improves monotonically and variance shrinks sharply as client count rises — **with heterogeneity never changing**. Client count, not heterogeneity, is the causal variable.
 
+![Client Count Isolation](results_client_count/client_count_isolation.png)
+
 ### Supporting Evidence: 10-Client Sweep
 
 Pooled dataset partitioned across 10 simulated clients at 5 heterogeneity levels (α ∈ {100, 10, 1, 0.5, 0.1}, Dirichlet), 5 seeds each. At K=10, federation wins across IID to moderate heterogeneity (F1 0.84 vs. 0.82 centralized) — consistent with the isolation study: above the critical client-count threshold, FedAvg works as expected.
+
+![Heterogeneity Sweep](results_rigorous/heterogeneity_sweep.png)
 
 ---
 
