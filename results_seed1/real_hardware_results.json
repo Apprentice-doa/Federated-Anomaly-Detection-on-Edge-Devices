@@ -1,0 +1,33 @@
+{
+  "local": {
+    "pi4 (ARM64)": {
+      "f1": 0.9451371571072319,
+      "auroc": 0.988093948829024
+    },
+    "gateway (x86_64)": {
+      "f1": 0.8483732351135667,
+      "auroc": 0.9666191975084822
+    }
+  },
+  "centralized": {
+    "f1": 0.8929342795433508,
+    "auroc": 0.9750464789148033
+  },
+  "federated": {
+    "f1": 0.7696113074204947,
+    "auroc": 0.9200863834075991
+  },
+  "communication_bytes_total": 297280,
+  "communication_kb_total": 290.3,
+  "communication_kb_per_round": 14.52,
+  "rounds": 20,
+  "epochs_per_round": 5,
+  "device_rows": {
+    "pi4_edge": 14354,
+    "mac_gateway": 14313
+  },
+  "device_anomaly_rate": {
+    "pi4_edge": 0.2314,
+    "mac_gateway": 0.2323
+  }
+}
