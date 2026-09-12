@@ -263,7 +263,7 @@ def main():
               f"to {results['f1_mean'][-1]:.3f} ({results['total_clients'][-1]} clients)")
         print("  -> SUPPORTS the client-count hypothesis")
     else:
-        print(f"  F1 did NOT improve from {results['f1_mean'][0]:.3f} ({results['total_clients'][0]} clients) "
+        print(f" F1 did NOT improve from {results['f1_mean'][0]:.3f} ({results['total_clients'][0]} clients) "
               f"to {results['f1_mean'][-1]:.3f} ({results['total_clients'][-1]} clients)")
         print("  -> Client count alone does NOT explain the 2-client failure")
 
